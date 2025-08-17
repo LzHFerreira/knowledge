@@ -1,0 +1,52 @@
+site_name: "Luiz's Knowledge Base"
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+plugins:
+  - search
+  - tags
+  - git-revision-date-localized
+  - mkdocs-awesome-pages-plugin
+  - mkdocs-glightbox
+  - mkdocs-section-index
+  - mkdocs-literate-nav
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - footnotes
+  - attr_list
+  - def_list
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.arithmatex:
+      generic: true
